@@ -4,7 +4,6 @@ import numpy as np
 from imutils.paths import list_images
 import time
 
-
 class OrientationDetection:
 
     def __init__(self):
@@ -88,7 +87,7 @@ class OrientationDetection:
 
         # Get the size of the text to determine the position
         text_size = cv2.getTextSize(text, font_face, font_scale, font_thickness)[0]
-        text_width, text_height = text_size
+        text_height = text_size
         text_x = 10  # left margin
         text_y = text_height + 10  # top margin
 
